@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>DevPulse | Explore GitHub Developers</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+
+  <div class="container header-content">
+
+    <a href="#" class="logo">
+      <span class="logo-mark">⚡</span>
+      <span>DevPulse</span>
+    </a>
+
+    <nav class="nav">
+      <span class="nav-status">
+        GitHub Developer Explorer
+      </span>
+    </nav>
+
+  </div>
+
+</header>
+<main>
+
+  <section class="hero">
+
+    <div class="container hero-content">
+
+      <p class="eyebrow">
+        <span class="pulse-dot"></span>
+        GitHub Profile Explorer
+      </p>
+
+      <h1>
+        Discover the people
+        <span>building the web.</span>
+      </h1>
+
+      <p class="hero-description">
+        Search any GitHub developer and explore their profile,
+        repositories, and open-source activity in one place.
+      </p>
+
+      <form class="search-form" id="searchForm">
+
+        <div class="search-input-wrapper">
+
+          <span class="search-icon">⌕</span>
+
+          <input
+            type="text"
+            id="usernameInput"
+            placeholder="Enter a GitHub username..."
+            autocomplete="off"
+          >
+
+        </div>
+
+        <button type="submit" class="search-button">
+          Search Developer
+          <span>→</span>
+        </button>
+
+      </form>
+
+      <p class="search-hint">
+        Try:
+        <button type="button" class="example-user">
+          torvalds
+        </button>
+        <button type="button" class="example-user">
+          gaearon
+        </button>
+        <button type="button" class="example-user">
+          sindresorhus
+        </button>
+      </p>
+
+    </div>
+
+  </section>
+  <section class="results-section">
+
+  <div class="container">
+
+    <!-- Profile Result -->
+    <section class="profile-section" id="profileSection">
+
+      <div class="profile-card">
+
+        <div class="profile-header">
+
+          <img
+            src=""
+            alt="Developer avatar"
+            class="profile-avatar"
+            id="profileAvatar"
+          >
+
+          <div class="profile-info">
+
+            <p class="profile-label">
+              Developer Profile
+            </p>
+
+            <h2 id="profileName">
+              Developer Name
+            </h2>
+
+            <p class="profile-username" id="profileUsername">
+              @username
+            </p>
+
+          </div>
+
+        </div>
+
+        <p class="profile-bio" id="profileBio">
+          Developer biography will appear here.
+        </p>
+
+        <div class="profile-details">
+
+          <span id="profileLocation">
+            📍 Location
+          </span>
+
+          <a
+            href="#"
+            id="profileLink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub Profile ↗
+          </a>
+
+        </div>
+
+        <div class="profile-stats">
+
+          <div class="stat">
+            <span class="stat-number" id="repoCount">0</span>
+            <span class="stat-label">Repositories</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat-number" id="followerCount">0</span>
+            <span class="stat-label">Followers</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat-number" id="followingCount">0</span>
+            <span class="stat-label">Following</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Repository Result -->
+    <section class="repositories-section" id="repositoriesSection">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-label">
+            Open Source Work
+          </p>
+
+          <h2>
+            Featured Repositories
+          </h2>
+        </div>
+
+        <span class="repository-count" id="repositoryCount">
+          0 repositories
+        </span>
+
+      </div>
+
+      <div
+        class="repositories-grid"
+        id="repositoriesGrid"
+      >
+
+        <!-- Repository cards will be added by JavaScript -->
+
+      </div>
+
+    </section>
+
+  </div>
+
+</section>
+
+</main>
+
+</div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
